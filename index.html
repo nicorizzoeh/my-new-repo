@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Marvel HTML Bootstrap 4 Template</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/2621156d1a.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <script src="wow/wow.min.js"></script>
+    <script src="wow/wow.js"></script>
+    <link href="lib/animate/animate.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="js/custom.js"></script>
+
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    
+  <!--
+    This code will translate page contents automatically (without user input)
+    Settings located at line 9, current script will translate english to estonian
+  -->
+
+  <script>
+    // Sample translations object
+    const translations = {
+        en: {
+            about: 'About',
+            projects: 'Projects',
+            onboarding: 'Onboarding',
+            contact: 'Contact',
+            colormode: 'Color mode',
+            welcometo: 'Welcome to our social media marketing agency',
+            weareexpertsin: 'We are experts in',
+            webdesign: 'Web Design',
+            organicgrowth: 'Organic growth',
+            socialmediamanagement: 'Social Media Management',
+            focuson: 'Focus on running your business, we\'ll handle your socials.',
+            hereisaglimpse: 'Here\'s a glimpse into the digital media projects that our team is currently working on.',
+            yodel: 'yodelfuturo.com - a website to send letter to your future self',
+            periodiqa: 'Periódiqa - news',
+            contactus: 'Contact us',
+            organicallywe: 'Organically, we gained over',
+            followers: 'Followers',
+            likes: 'Likes',
+            ourteam: 'Our Team',
+            cofounder1: 'Co-Founder',
+            cofounder2: 'Co-Founder',
+            interestedin: 'Interested to work together? Let\'s talk'
+        },
+        es: {
+            about: 'Nosotros',
+            projects: 'Proyectos',
+            onboarding: 'Onboarding',
+            contact: 'Contacto',
+            colormode: 'Tema',
+            welcometo: 'Bienvenido a nuestra agencia de marketing en redes sociales',
+            weareexpertsin: 'Somos expertos en',
+            webdesign: 'Diseño Web',
+            organicgrowth: 'Crecimiento orgánico',
+            socialmediamanagement: 'Manejo de redes sociales',
+            focuson: 'Enfócate en tu negocio, nosotros nos encargamos de tus redes.',
+            hereisaglimpse: 'Aquí tienes un vistazo a los proyectos en los que nuestro equipo está trabajando actualmente.',
+            yodel: 'yodelfuturo.com - una web para enviar cartas a tu yo del futuro',
+            periodiqa: 'Periódiqa - noticias',
+            contactus: 'Contáctanos',
+            organicallywe: 'Orgánicamente, hemos ganado más de',
+            followers: 'Seguidores',
+            likes: 'Likes',
+            ourteam: 'Nuestro equipo',
+            cofounder1: 'Co-Fundador',
+            cofounder2: 'Co-Fundador',
+            interestedin: '¿Interesado en trabajar juntos? Escríbenos'
+            
+        },
+        // Add more translations here
+    };
+
+    // Function to translate the content
+    function translateContent() {
+        const lang = navigator.language || navigator.userLanguage;
+        const langCode = lang.substring(0, 2);
+        console.log('Detected language:', langCode)
+
+        if (translations[langCode]) {
+          
+            document.getElementById('about').innerText = translations[langCode].about;
+            document.getElementById('about').setAttribute('data-hover', translations[langCode].about);
+
+            document.getElementById('projects').innerText = translations[langCode].projects;
+            document.getElementById('projects').setAttribute('data-hover', translations[langCode].projects);
+
+            document.getElementById('onboarding').innerText = translations[langCode].onboarding;
+            document.getElementById('onboarding').setAttribute('data-hover', translations[langCode].onboarding);
+
+            document.getElementById('contact').innerText = translations[langCode].contact;
+            document.getElementById('contact').setAttribute('data-hover', translations[langCode].contact);
+            
+            document.getElementById('colormode').innerText = translations[langCode].colormode;
+
+            document.getElementById('welcometo').innerText = translations[langCode].welcometo;
+
+            document.getElementById('weareexpertsin').innerText = translations[langCode].weareexpertsin;
+
+            document.getElementById('webdesign').innerText = translations[langCode].webdesign;
+
+            document.getElementById('organicgrowth').innerText = translations[langCode].organicgrowth;
+
+            document.getElementById('socialmediamanagement').innerText = translations[langCode].socialmediamanagement;
+
+            document.getElementById('focuson').innerText = translations[langCode].focuson;
+
+            document.getElementById('hereisaglimpse').innerText = translations[langCode].hereisaglimpse;
+
+            document.getElementById('yodel').innerText = translations[langCode].yodel;
+
+            document.getElementById('periodiqa').innerText = translations[langCode].periodiqa;
+
+            document.getElementById('contactus').innerText = translations[langCode].contactus;
+
+            document.getElementById('organicallywe').innerText = translations[langCode].organicallywe;
+
+            document.getElementById('followers').innerText = translations[langCode].followers;
+
+            document.getElementById('likes').innerText = translations[langCode].likes;
+
+            document.getElementById('ourteam').innerText = translations[langCode].ourteam;
+
+            document.getElementById('cofounder1').innerText = translations[langCode].cofounder1;
+
+            document.getElementById('cofounder2').innerText = translations[langCode].cofounder2;
+
+            document.getElementById('interestedin').innerText = translations[langCode].interestedin;
+
+
+        } else {
+            console.warn('No translation found for:', langCode);
+        }
+    }
+
+    // Call the translateContent function on load
+    window.onload = translateContent;
+
+
+  </script>
+  </head>
+  <body>
+    <script src="https://kit.fontawesome.com/2621156d1a.js" crossorigin="anonymous"></script>
+
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img width="30%" src="images/project/HUS-black.png" class="img-fluid" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span id="about" data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span id="projects" data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span id="onboarding" data-hover="Onboarding">Onboarding</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span id="contact" data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        <span id="colormode">Color mode</span>
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small id="welcometo" class="small-text">Welcome to <span class="mobile-block">our social media marketing agency</span></small>
+                        <h1 class="animated animated-text">
+                            <span id="weareexpertsin" class="mr-2">We are experts in</span>
+                                <div class="animated-info">
+                                    <span id="socialmediamanagement" class="animated-item">Social Media Management</span>
+                                    <span id="webdesign" class="animated-item">Web Design</span>
+                                    <span id="organicgrowth" class="animated-item">Organic growth</span>
+                                </div>
+                        </h1>
+
+                        <p id="focuson">Focus on running your business, we'll handle your socials.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a id="contactus" href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img width="85%" src="images/undraw/Marketing-cuate.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h2 id="hereisaglimpse">Here's a glimpse into the digital media projects that our team is currently working on.</h2>
+                      </div>
+                      <br><br>
+
+                      <div class="owl-carousel owl-theme">
+
+                        <div class="item">
+                          <div class="project-info">
+                            <h6 id="yodel" style="left: 8%; position:absolute">yodelfuturo.com - a website to send letter to your future self</h6> 
+                            <img src="images/project/yodelfuturo-website.png" class="img-fluid" alt="project image"> 
+                        </div>
+                      </div>
+                      
+                      <div class="item">
+                        <div class="project-info">
+                          <h6 style="left: 8%; position:absolute">Instagram (+15k) - TikTok (+1M) </h6>
+                          <img src="images/project/yodelfuturo-redes.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>          
+                      
+                      <div class="item">
+                        <div class="project-info">
+                          <h6 id="periodiqa" style="left: 8%; position:absolute">Periódiqa - news</h6>
+                          <img src="images/project/periodiqa-website.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>  
+
+
+                      <div class="item">
+                        <div class="project-info">
+                          <h6 style="left: 8%; position:absolute">Instagram (+150k)</h6>
+                          <img src="images/project/periodiqa-redes.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="project-info">
+                          <h6 style="left: 8%; position:absolute"></h6>
+                          <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                        </div>
+                      </div>
+                        
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+        <!-- END PROJECTS -->
+
+    <!-- Facts Start -->
+      <div class="container-xxl fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 px-lg-5">
+          <h1 id="organicallywe">Organically, we gained over</h1>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-certificate fa-3x text-secondary mb-3"></i>
+                    <h1 style="display:inline-block;">+</h1><h1 style="display:inline-block;" class="text-black mb-2" data-toggle="counter-up">1.25</h1><h1 style="display:inline-block;">M</h1>
+                    <p id="followers" class="text-black mb-0">Followers</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-3x text-secondary mb-3"></i>
+                    <h1 style="display:inline-block;">+</h1><h1 style="display:inline-block;" class="text-black mb-2" data-toggle="counter-up">35</h1><h1 style="display:inline-block;">M</h1>
+                    <p id="likes" class="text-black mb-0">Likes</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-3x text-secondary mb-3"></i>
+                    <h1 style="display:inline-block;">+</h1><h1 style="display:inline-block;" class="text-black mb-2" data-toggle="counter-up">1234</h1>
+                    <p class="text-black mb-0">Satisfied Clients</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-check fa-3x text-secondary mb-3"></i>
+                    <h1 style="display:inline-block;">+</h1><h1 style="display:inline-block;" class="text-black mb-2" data-toggle="counter-up">1234</h1>
+                    <p class="text-black mb-0">Compleate Projects</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <script>
+      
+        // Facts counter
+        new WOW().init();
+  
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 10,
+            time: 2000
+        });
+  
+     </script>
+
+    <!-- Facts End -->
+
+
+
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 id="nuestro proceso de onboarding" class="mb-4">Our onboarding process</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>1st</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Investigation</span><small></small></h3>
+                                  <p>In this phase, we investigate and analyze the brand's path on social networks, the potential competition and we constantly study it's target audience</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2nd</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Strategy and production</span><small></small></h3>
+                                <p>Strategies are carried out based on the study of the brand, the competition and the target audience</p>
+                                <p>Strategic and trend-related content is created to promote the brand in different environments</p>
+                                <p>We implement innovatove and creative ideas for brand communication</p>
+                                <p>We carry out brand content planning</p>
+                              </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>3rd</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Management</h3>
+                                <p>Optimization of social media profiles</p>
+                                <p>Management of comments and dms</p>
+                                <p>Writing and publishing of posts</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>4th</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Results<small></small></h3>
+                                <p>Monthly generation of statistics</p>
+                                <p>Revision and improvements of previous strategies</p>
+                                <p>Results report</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SEGUNDA LINEA DE PROGRESO
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2017</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
+                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>User Interfaces</span><small>Creative Agency</small></h3>
+                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to download HTML templates without any login or email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2013</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Artwork Design</span><small>New Art School</small></h3>
+                                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+     -->
+
+
+    <!-- Our team -->
+
+    <section class="py-5" id="team">
+      <div class="container">
+        <h2 id="ourteam" class="text-center mb-5">Our Team</h2> 
+    
+        <div class="row">
+          <div class="col-md-6">
+            <div class="team-member card mb-4">
+              <div class="team-member-content card-body">
+                <div class="media align-items-center">
+                  <img width="25%" style="border-radius: 4px;" src="https://avatars.githubusercontent.com/u/45498015?v=4" alt="Team member 1" class="d-block ui-w-80 mr-4" />
+                  <div class="media-body">
+                    <h5 style="display:inline" class="mb-0">Gonzalo Rizzo</h5>
+                    <a href="https://ar.linkedin.com/in/gonzalo-rizzo-ehrenbock/en" style="display:inline; margin-left:10px;" class="about-image svg">
+                      <img width="7%" src="images/undraw/linkedin.svg" class="linkedin img-fluid linkedin-light" alt="svg image">
+                      <img width="9%" src="images/undraw/linkedin-2.png" class="linkedin-2 img-fluid linkedin-dark" alt="svg image">
+                    </a>
+                    <p id="cofounder1" class="text-muted mb-0">Co-Founder</p>
+                    <p class="veoveo">Software developer since 2018. In social media management since 2019. Computer Engineer at university. Passionate about technology, marketing, and social media.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-member-overlay d-flex align-items-center justify-content-center">
+                <a href="#" class="text-white"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="team-member card mb-4">
+              <div class="team-member-content card-body">
+                <div class="media align-items-center">
+                  <img width="25%" style="border-radius: 4px;" src="images/project/nicolas.png" alt="Team member 2" class="d-block ui-w-80 mr-4" />
+                  <div class="media-body">
+                    <h5 class="mb-0">Nicolas Rizzo</h5>
+                    <p id="cofounder2" class="text-muted mb-0">Co-Founder</p>
+                    <p class="veoveo">Expert in growing and managing social media accounts with excellent results. Software engineer student.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-member-overlay d-flex align-items-center justify-content-center">
+                <a href="#" class="text-white"><i class="fas fa-plus"></i></a>
+              </0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End our team -->
+
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">010 020 0960</p>
+                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 id="interestedin" class="mb-4">Interested to work together? Let's talk</h2>
+
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  </body>
+</html>
